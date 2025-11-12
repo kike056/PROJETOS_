@@ -1,0 +1,14 @@
+'''Crie um algoritmo que, dado um número informado pelo usuário, imprima a tabuada de maneira que o usuário também informe o início e o fim da tabuada. Por exemplo: usuário solicitando a tabuada do número 6, com início em 5 e fim em 8.
+6 x 5 = 30 6 x 6 = 36 6 x 7 = 42 6 x 8 = 48'''
+ 
+numero = int(input("Informe um número para ver a tabuada: "))
+inicio_tabuada = int(input("Informe o inicio da tabuada: "))
+fim_tabuada = int(input("Informe o termino da tabuada: "))
+fim_tabuada += 1
+print(f"\nTabuada do {numero}:")
+print(f"termino ate {inicio_tabuada}:")
+print(f"termino ate {fim_tabuada}:")
+ 
+for i in range(inicio_tabuada,fim_tabuada):
+  resultado = numero * i
+  print(f"{numero} x {i} = {resultado}")
