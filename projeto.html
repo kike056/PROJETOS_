@@ -1,0 +1,58 @@
+<HTML>
+<HEAD>
+<TITLE> Hello World </TITLE>              
+<LINK href="estilo.css" REL="stylesheet" type="TEXT/CSS"
+</HEAD>
+<BODY>
+<FIELDSET >
+<legend><b>CADASTRAMENTO DE ALUNO      </legend></b>
+<p id="primeiro"> CADASTRAMENTO DE ALUNO  </p>
+<form>
+<BR>
+<blockquote>
+<P>Nome:
+<input TYPE="TEXT" NAME="nome" SIZE=30 MAXLENGTH=20></P> 
+<P>Endereco:
+<input TYPE="TEXT" NAME="endereco" SIZE=20 MAXLENGTH=3></P>
+<P>Cidade:
+<input TYPE="TEXT" NAME="cidade" SIZE=5 MAXLENGTH=6></P>
+<dl> <!Lista Glossário>
+<dt>Sexo:
+<dd><input TYPE="radio" NAME="sexo" VALUE="Masculino">
+             Masculino</dd>
+<dd><input TYPE="radio" NAME="sexo" VALUE="Feminino">
+            Feminino</dd>
+</blockquote>
+</P>
+<P>Curso:
+<dd><input TYPE="radio" NAME="curso" VALUE="Ciencia da Comp">
+<dd><input TYPE="radio" NAME="curso" VALUE="Sistemas Inf">
+<dd><input TYPE="radio" NAME="curso" VALUE="Eng Software"></P>
+<P>
+<BR>
+<form action="Exemplo21.html" method="post">  
+         INTERESSES:<BR>
+<select name="Interesse" multiple=“MULTIPLE”> 
+<option value="redes>Redes
+<option value="internet">internet
+<option value="computadores">computadores
+<option value="Seguranca da informação">Seguranca da informação
+<option value="Banco de dados">Banco de dados
+<option value="Eng Software">Eng Software
+</select> 
+<BR>
+<BR>
+<p> OBSERVAÇÕES:   <br>
+<textarea name="sujestao" rows="4"     
+      cols="30" wrap="virtual"> 
+</textarea>
+<P><input TYPE="button" NAME="BOTAO" ID="botao1" VALUE="INSERIR" 
+            OnClick="Mostra(this.form)"></P>
+<input type="button" name="btn_voltar" value="VOLTAR">
+ 
+ 
+         </form>
+</FIELDSET> 
+</BODY>
+ 
+      </HTML>
