@@ -1,15 +1,100 @@
-/* CSS Document */                                            
-
-Body {
-
-       color:;
-
-}
+body {
+    background-color:   #FFFFE0;
+    }
+     
+    *{
+    margin:0 auto;
+    padding:10;
+    box-sizing:content-box;
+    }
+     
+    #menu_h{
+    list-style:none;
+    padding:0;
+    background-color:gray;
+    }
+     
+    #menu_h li{
+    display:inline;
+    padding:10px;
+    }
+     
+    #menu_h li a{
+    color:#fff;
+    padding:15px;
+    display: inline-block;
+    text-decoration:none;
+    transition: background -5s;
+    }
+     
+    #menu_h li a:hover {
+    background-color:orange;
+    }
+     
+    .imagem1 {
+    width: 450px;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow:0 0 1px gray;
+    }
+     
+    .imagem2 {
+    width: 450px;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow:0 0 1px gray;
+    }
+     
+    .imagem3 {
+    width: 450px;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow:0 0 5px gray;
+    }
+     
+    .imagem4 {
+    width: 450px;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow:0 0 5px gray;
+    }
+     
+    .imagem5 {
+    width: 708px;
+    height: 230px;
+    border-radius: 20px;
+    }
+     
+    .imagem6 {
+    width: 708px;
+    height: 230px;
+    border-radius: 20px;
+    }
+     
+    .imagem7 {
+    width: 708px;
+    height: 230px;
+    border-radius: 20px;
+    }
+     
+    .imagem8 {
+    width: 413px;
+    height: 300px;
+    border-radius: 20px;
+    }
+     
+    .imagem9 {
+    width: 413px;
+    height: 300px;
+    border-radius: 20px;
+    }
+     
+    .imagem10 {
+    width: 413px;
+    height: 300px;
+    border-radius: 20px;
+    }
  
-#primeiro {
-
-color:red;
- 
-}
-
- 
+    FIELDSET {
+        background-color: #D3D3D3;
+    }
