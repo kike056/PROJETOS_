@@ -1,0 +1,64 @@
+@file:JvmName("JDoodle")
+fun main() {
+val meuNome = "Caique"
+val meuRa = "R501BH6"
+    while (true) { //laco ate que o break seja alcançado
+        println("Calculadora da Lei de Ohm ")
+        println("Escolha o calculo:")
+        println("1. Tensão (V)")
+        println("2. Corrente (I)")
+        println("3. Resistência (R)")
+        println("4. sair")
+        var escolha = readLine()?.toIntOrNull()
+        when (escolha) {
+            1 -> calcV()
+            2 -> calcI()
+            3 -> calcR()
+            4 -> break
+          else -> println("Opcao invalida.")
+        }
+    }
+     println("Programa desenvolvido por $meuNome, RA: $meuRa encerrado")//variáveis armazenadas no inicio do código
+     }
+
+ 
+fun calcV() {
+    print("Calculo da Tensão(V = R x I:) ")
+    print("Digite a resistência(Ω): ")
+    val resistencia = readLine()?.toDoubleOrNull()
+    print("Digite a corrente (A): ")
+    val corrente = readLine()?.toDoubleOrNull()
+   if (resistencia != null && corrente != null) {
+        val tensao = resistencia * corrente
+        println("A tensão é: ${"%.2f".format(tensao)} V")
+    } else {
+        println("Valores inválidos!")
+    }
+}
+fun calcI() {
+    println("Calculando Corrente (I = V ÷ R)")
+    print("Digite a tensão (V): ")
+    val tensao = readLine()?.toDoubleOrNull()
+    print("Digite a resistência (Ω): ")
+    val resistencia = readLine()?.toDoubleOrNull()
+    if (tensao != null && resistencia != null && resistencia != 0.0) {
+        val corrente = tensao / resistencia
+        println("A corrente é: ${"%.2f".format(corrente)} A")
+    } else {
+        println("Valores inválidos ou resistência zero!")
+    }
+}
+ 
+fun calcR() {
+    println("Calculando Resistência (R = V ÷ I)")
+    print("Digite a tensão (V): ")
+    val tensao = readLine()?.toDoubleOrNull()
+    print("Digite a corrente (A): ")
+    val corrente = readLine()?.toDoubleOrNull()
+    if (tensao != null && corrente != null && corrente != 0.0) {
+        val resistencia = tensao / corrente
+        println("A resistência é: ${"%.2f".format(resistencia)} Ω")
+    } else {
+        println("Valores inválidos ou corrente zero!")
+    }
+}

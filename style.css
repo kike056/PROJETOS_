@@ -1,0 +1,132 @@
+ 
+*{
+    margin:0 auto;
+    padding:10;
+    box-sizing:content-box;
+    font-family: Arial, sans-serif;
+    }
+ 
+    #menu_h{
+        background-color:gray;
+        padding:0;
+    }
+ 
+    #menu_h ul{
+        list-style:none;
+        padding:0;
+        background-color:gray;
+        max-width: 800px;
+        }
+         
+        #menu_h ul li{
+        display:inline;
+        padding:10px;
+        }
+         
+        #menu_h ul li a {
+        color:#fff;
+        padding:15px;
+        display: inline-block;
+        text-decoration:none;
+        transition: background .5s;
+        }
+         
+        #menu_h ul li a:hover {
+        background-color:orange;
+        }
+ 
+        #menu_h li:last-child a{
+            float: right;
+            padding:15px;
+        }
+ 
+        .links a{
+            padding:15px;
+            text-decoration:none;
+            }
+ 
+        .imagem1 {
+            width: 450px;
+            height: 300px;
+            border-radius: 30px;
+        }
+ 
+        .imagem2 {
+            width: 450px;
+            height: 300px;
+            border-radius: 30px;
+            animation-duration: 2s;
+            animation-name: anime;
+            animation-iteration-count: 1;
+        }
+ 
+        @keyframes anime {
+            from {
+              margin-left: 30%;
+              width: 0%;
+              opacity: 0.1;
+            }
+ 
+            to {
+                margin-left: 0%;
+                width: 15%;
+                opacity: 1.0;
+              }
+            }
+ 
+        .imagem3 {
+            width: 450px;
+            height: 300px;
+            border-radius: 30px;
+            animation-duration: 2s;
+            animation-name: anime1;
+            animation-iteration-count: 1;
+        }
+ 
+        @keyframes anime1 {
+            from {
+              margin-left: 0%;
+              width: 0%;
+              opacity: 0.1;
+            }
+ 
+            to {
+                margin-left: 30%;
+                width: 15%;
+                opacity: 1.0;
+              }
+            }
+ 
+        .imagem4 {
+            width: 450px;
+            height: 300px;
+            border-radius: 30px;
+            animation-duration: 2s;
+            animation-name: anime2;
+            animation-iteration-count: 1;
+        }
+ 
+        @keyframes anime2 {
+            from {
+                margin-left: 30%;
+                width: 0%;
+                opacity: 0.1;
+              }
+   
+              to {
+                  margin-left: 0%;
+                  width: 15%;
+                  opacity: 1.0;
+                }
+              }
+ 
+        .rodape {
+            background-color: gray;
+            color: white;              
+            text-align: center;      
+            padding: px 0;          
+            position: relative;  
+            width: 100%;              
+            font-size: 16px;          
+        }
+ 
